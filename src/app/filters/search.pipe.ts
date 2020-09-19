@@ -11,7 +11,7 @@ export class SearchPipe implements PipeTransform {
     if (!items || !searchText) {
       return items;
     }
-    return  items.filter(item => (item.repoName.indexOf(searchText) !== -1) );
+    return  items.filter(item => (item.repoName.toLowerCase().indexOf(searchText.toLowerCase()) !== -1) );
 
   }
 
