@@ -62,7 +62,6 @@ Run ng build to build the project. The build artifacts will be stored in the dis
 <img  width="30%" height="50%" src="https://user-images.githubusercontent.com/46169333/93689039-fe990380-faca-11ea-8028-165bab6a10aa.png">
 
 ### Search by repos name 
-<img  width="50%" height="100%" src="https://user-images.githubusercontent.com/46169333/93689290-5b95b900-facd-11ea-8200-3cbfa1b7700b.png">
 
 <img  width="50%" height="100%" src="https://user-images.githubusercontent.com/46169333/93689324-cc3cd580-facd-11ea-816a-529d6a74b842.png">
 
