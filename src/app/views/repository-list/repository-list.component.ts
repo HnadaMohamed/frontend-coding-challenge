@@ -32,10 +32,15 @@ export class RepositoryListComponent implements OnInit {
   getreposList(next: number){
     this.githubService.getMostStarredGitRepos(next).subscribe( (data: any) => {
       data.items.forEach(repo => {
+        let desc ;
+        // checking if the repo description is too long
+        if (repo.description){
+          desc =  (repo.description && (repo.description).length <= 100 ) ? repo.description : (repo.description).substring(0, 100) + '...';
+        }
         this.reposList.push(
           new Repository (
             repo.owner.avatar_url,
-            repo.name, repo.description,
+            repo.name, desc,
             repo.stargazers_count,
             repo.open_issues,
             // Calculate the time interval
