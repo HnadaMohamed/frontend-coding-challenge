@@ -18,8 +18,11 @@
       (scrolled)="onScroll()"
     >
     </div>
-    <div *ngIf="reposList.length==0"  class="loader"></div>
-    <div *ngIf="(reposList |  search: searchText).length==0 && reposList.length!==0"  class="no-data"> No repository found .... </div>
+    <div class="state-info">
+      <div *ngIf="reposList.length==0"  class="loader"></div>
+      <div *ngIf="(reposList |  search: searchText).length==0 && reposList.length!==0"  class="no-data"> No repository found .... </div>
+    </div>
+
   </div>
 
   <div class="bottom">

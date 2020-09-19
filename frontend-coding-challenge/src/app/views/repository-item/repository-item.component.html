@@ -6,8 +6,10 @@
     <h1 class="repo-name">{{ repoItem.repoName }}</h1>
     <span class="repo-desctiption">{{ repoItem.repoDescription }}</span>
     <div class="repo-add-info">
-      <span class="nbstars">Stars: {{ repoItem.nbStars | kformater }}</span>
-      <span class="nb-issues">Issues: {{ repoItem.nbIssues | kformater }}</span>
+      <div class="nb-wraper">
+        <span class="nbstars">Stars: {{ repoItem.nbStars | kformater }}</span>
+        <span class="nb-issues">Issues: {{ repoItem.nbIssues | kformater }}</span>
+      </div>
       <span class="time-interval">Submittes  {{ repoItem.timeInterval }} days ago by {{ repoItem.repoName }} </span>
     </div>
   </div>

@@ -5,6 +5,7 @@
   font-family: 'Balsamiq Sans';
   font-weight: 400;
   border: 2px solid black;
+  box-shadow: 5px 10px rgba(228, 221, 221, 0.496);
   border-radius: 5px;
   margin: 20px;
   padding: 10px;
@@ -32,28 +33,93 @@
   height: 100%;
   padding: 0px 0px 0px 20px;
 }
+
+.nb-wraper{
+  display: flex;
+  flex-direction: row;
+}
+
+
 .repo-name{
   font-size: 20px;
   margin: 0px 0px 10px 0px ;
 }
-.repo-desctiption{
 
-}
 .repo-add-info{
-  margin: 15px 0px 0px 0px ;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  margin: 0px 0px 0px 0px ;
 }
 .nbstars{
   border: 2px solid black;
   border-radius: 2px;
   padding: 2px 5px 2px 5px;
-  margin: 0px 20px 0px 0px ;
+  margin: 10px 20px 0px 0px ;
 }
 .nb-issues{
   border: 2px solid black;
   border-radius: 2px;
   padding: 2px 5px 2px 5px;
-  margin: 0px 20px 0px 0px ;
+  margin: 10px 20px 0px 0px ;
 }
 .time-interval{
-  margin: 0px 0px 0px 0px ;
+  margin: 10px 0px 0px 0px ;
+  padding: 2px 5px 2px 5px;
 }
+
+
+@media screen and (max-width:830px){
+  .repo-avatar{
+    min-width: 150px;
+    min-height: 150px;
+    margin: 0px 0px 10px 0px;
+
+  }
+}
+
+@media screen and (max-width:576px){
+
+  .repo-container{
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .repo-avatar{
+    min-width: 80px;
+    min-height: 80px;
+    margin: 0px 0px 10px 0px;
+
+  }
+
+  .repo-info{
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0px 0px 0px 0px;
+
+  }
+
+  .nb-issues{
+
+    padding: 2px 5px 2px 5px;
+    margin: 10px 0px 0px 0px ;
+  }
+
+  .nb-wraper{
+    display: flex;
+    width: 100%;
+    flex-direction: row;
+    justify-content: center;
+  }
+  .time-interval{
+    width: 100%;
+  }
+  .repo-desctiption{
+    width: 100%;
+  }
+
+}
+
+
