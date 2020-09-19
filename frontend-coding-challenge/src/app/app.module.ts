@@ -6,19 +6,26 @@ import { AppComponent } from './app.component';
 import { HttpClientModule } from '@angular/common/http';
 
 import { RepositoryListComponent } from './views/repository-list/repository-list.component';
-import { RepositoryItemComponent } from './reusable/repository-item/repository-item.component';
-import { GithubServiceService } from './services/github-service.service';
+import { RepositoryItemComponent } from './views/repository-item/repository-item.component';
+import { InfiniteScrollModule } from 'ngx-infinite-scroll';
+import { KformaterPipe } from './filters/kformater.pipe';
+import { SearchPipe } from './filters/search.pipe';
+import { FormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
     AppComponent,
     RepositoryListComponent,
-    RepositoryItemComponent
+    RepositoryItemComponent,
+    KformaterPipe,
+    SearchPipe
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    HttpClientModule
+    HttpClientModule,
+    InfiniteScrollModule,
+    FormsModule
   ],
   providers: [
   ],

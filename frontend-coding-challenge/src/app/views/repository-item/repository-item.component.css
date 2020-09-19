@@ -1,0 +1,59 @@
+.repo-container{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  font-family: 'Balsamiq Sans';
+  font-weight: 400;
+  border: 2px solid black;
+  border-radius: 5px;
+  margin: 20px;
+  padding: 10px;
+
+}
+.repo-avatar{
+  width: 100px;
+  height: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 2px solid black;
+  padding: 1px;
+
+}
+.repo-avatar img{
+  width: 100%;
+  height: 100%;
+}
+.repo-info{
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  height: 100%;
+  padding: 0px 0px 0px 20px;
+}
+.repo-name{
+  font-size: 20px;
+  margin: 0px 0px 10px 0px ;
+}
+.repo-desctiption{
+
+}
+.repo-add-info{
+  margin: 15px 0px 0px 0px ;
+}
+.nbstars{
+  border: 2px solid black;
+  border-radius: 2px;
+  padding: 2px 5px 2px 5px;
+  margin: 0px 20px 0px 0px ;
+}
+.nb-issues{
+  border: 2px solid black;
+  border-radius: 2px;
+  padding: 2px 5px 2px 5px;
+  margin: 0px 20px 0px 0px ;
+}
+.time-interval{
+  margin: 0px 0px 0px 0px ;
+}

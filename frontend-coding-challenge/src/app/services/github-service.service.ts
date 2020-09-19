@@ -6,12 +6,12 @@ import { Repository } from '../models/repository';
 @Injectable({ providedIn: 'root' })
 export class GithubServiceService {
 
-  private githubApi = 'https://api.github.com/search/repositories?q=created:>2020-08-15&sort=stars&order=desc';
+  private githubApi = 'https://api.github.com/search/repositories?q=created:>2020-08-19&sort=stars&order=desc';
 
   constructor(private http: HttpClient) { }
 
   /**
-   * This function get the most starred Github repos created in the last 30 days
+   * Get the most starred Github repos created in the last 30 days
    */
   public getMostStarredGitRepos(next: any): Observable <any> {
     return this.http.get(this.githubApi, { params: { page: next } });

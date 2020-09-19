@@ -1,3 +1,5 @@
+import { Moment } from 'moment';
+
 export class Repository{
 
   constructor(
@@ -6,7 +8,7 @@ export class Repository{
     public repoDescription: string ,
     public nbStars: number ,
     public nbIssues: number,
-    public timeInterval: string
+    public timeInterval: number
   ) {}
 
 }

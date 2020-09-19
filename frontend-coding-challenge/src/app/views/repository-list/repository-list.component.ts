@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import * as moment from 'moment';
 import { Repository } from 'src/app/models/repository';
 import { GithubServiceService } from 'src/app/services/github-service.service';
 
@@ -10,19 +11,26 @@ import { GithubServiceService } from 'src/app/services/github-service.service';
 
 export class RepositoryListComponent implements OnInit {
 
+  // Repositoty list
   reposList: Array<Repository> = new Array<Repository>();
+  // Index of the page
+  pageIndex = 0;
+  searchText = '';
 
-  constructor(private githubService: GithubServiceService) {
+  constructor(private githubService: GithubServiceService) {}
 
-  }
 
   ngOnInit(): void {
-    this.getreposList(0);
+    // Get the first page
+    this.onScroll();
   }
 
+
+  /**
+   * Get the data from Github API
+   */
   getreposList(next: number){
     this.githubService.getMostStarredGitRepos(next).subscribe( (data: any) => {
-      this.reposList.length = 0;
       data.items.forEach(repo => {
         this.reposList.push(
           new Repository (
@@ -30,11 +38,26 @@ export class RepositoryListComponent implements OnInit {
             repo.name, repo.description,
             repo.stargazers_count,
             repo.open_issues,
-            repo.created_at
+            // Calculate the time interval
+            moment().diff( repo.created_at , 'days' )
           )
         );
       });
     });
-
   }
+
+
+  /**
+   * Get the next page when the scroll reach the buttom of the page
+   */
+  onScroll(){
+    this.getreposList(++this.pageIndex);
+  }
+
+
+
+
+
+
+
 }

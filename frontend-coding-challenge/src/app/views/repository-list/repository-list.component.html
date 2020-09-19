@@ -1,1 +1,30 @@
-<p>repository-list works!</p>
+<div class="repo-list">
+  <div class="top">
+    <h3 class="title">Trending Repos</h3>
+    <div class="search-bar">
+      <input type="text" placeholder="Search" [(ngModel)]="searchText" >
+    </div>
+  </div>
+  <div class="main scrollable">
+      <div *ngFor="let repoItem of reposList |  search: searchText ">
+        <app-repository-item  [repoItem]='repoItem' ></app-repository-item>
+      </div>
+      <div
+      infiniteScroll
+      [infiniteScrollDistance]="2"
+      [infiniteScrollThrottle]="1000"
+      [infiniteScrollContainer]="'.scrollable'"
+      [fromRoot]="true"
+      (scrolled)="onScroll()"
+    >
+    </div>
+    <div *ngIf="reposList.length==0"  class="loader"></div>
+    <div *ngIf="(reposList |  search: searchText).length==0 && reposList.length!==0"  class="no-data"> No repository found .... </div>
+  </div>
+
+  <div class="bottom">
+
+  </div>
+</div>
+
+

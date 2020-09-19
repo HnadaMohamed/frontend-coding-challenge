@@ -1,0 +1,15 @@
+<div class="repo-container">
+  <div class="repo-avatar">
+    <img src="{{repoItem.ownerAvatar}}" alt="avatar">
+  </div>
+  <div class="repo-info">
+    <h1 class="repo-name">{{ repoItem.repoName }}</h1>
+    <span class="repo-desctiption">{{ repoItem.repoDescription }}</span>
+    <div class="repo-add-info">
+      <span class="nbstars">Stars: {{ repoItem.nbStars | kformater }}</span>
+      <span class="nb-issues">Issues: {{ repoItem.nbIssues | kformater }}</span>
+      <span class="time-interval">Submittes  {{ repoItem.timeInterval }} days ago by {{ repoItem.repoName }} </span>
+    </div>
+  </div>
+
+</div>
