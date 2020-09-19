@@ -7,8 +7,7 @@
  <h1 align="center">Front-end Coding Challenge</h1>
 
 
-<p align="center"><a href="https://portfolio.hnadamohamed.com/" rel="nofollow"><img src="https://camo.githubusercontent.com/b507ac8f2ec6427bbef518193567c4ec6060c780/68747470733a2f2f696d672e736869656c64732e696f2f62616467652f7265616c776f726c642d66726f6e74656e642d2532333738333537382e737667" alt="RealWorld Frontend" data-canonical-src="https://img.shields.io/badge/realworld-frontend-%23783578.svg" style="max-width:100%;"></a>
-<a href="https://portfolio.hnadamohamed.com/" rel="nofollow"><img src="https://camo.githubusercontent.com/1dc32ac4cf5dc99f3cd4e3c4bb5674e8ceec8a4d/68747470733a2f2f7472617669732d63692e6f72672f676f7468696e6b737465722f616e67756c61722d7265616c776f726c642d6578616d706c652d6170702e7376673f6272616e63683d6d6173746572" alt="Build Status" data-canonical-src="https://travis-ci.org/gothinkster/angular-realworld-example-app.svg?branch=master" style="max-width:100%;"></a>
+<p align="center">
 <a href="https://portfolio.hnadamohamed.com/"><img src="https://camo.githubusercontent.com/13c4e50d88df7178ae1882a203ed57b641674f94/68747470733a2f2f63646e2e7261776769742e636f6d2f73696e647265736f726875732f617765736f6d652f643733303566333864323966656437386661383536353265336136336531353464643865383832392f6d656469612f62616467652e737667" alt="Awesome" data-canonical-src="https://cdn.rawgit.com/sindresorhus/awesome/d7305f38d29fed78fa85652e3a63e154dd8e8829/media/badge.svg" style="max-width:100%;"></a>
 </p>
 
@@ -27,23 +26,6 @@ This project was build with Angular version 9.1.4.
 # Demo
 
 Link : https://portfolio.hnadamohamed.com/
-
-### Large Screens Design 
-<img  width="90%" height="100%" src="https://user-images.githubusercontent.com/46169333/93689033-f6d95f00-faca-11ea-9b72-dafa1c6b8984.png">
-
-### Meduim Screens Design 
-<img  width="60%" height="50%" src="https://user-images.githubusercontent.com/46169333/93689034-f9d44f80-faca-11ea-9764-f3679db3873c.png">
-
-### Small Screens Design 
-<img  width="30%" height="50%" src="https://user-images.githubusercontent.com/46169333/93689039-fe990380-faca-11ea-8028-165bab6a10aa.png">
-
-### Search by repos name 
-<img  width="50%" height="100%" src="https://user-images.githubusercontent.com/46169333/93689290-5b95b900-facd-11ea-8200-3cbfa1b7700b.png">
-
-<img  width="50%" height="100%" src="https://user-images.githubusercontent.com/46169333/93689324-cc3cd580-facd-11ea-816a-529d6a74b842.png">
-
-### Circle loader
-<img  width="50%" height="100%" src="https://user-images.githubusercontent.com/46169333/93689289-5a648c00-facd-11ea-9405-3ca335c08426.png">
 
 
 ## Getting started 
@@ -68,6 +50,27 @@ Run ng build to build the project. The build artifacts will be stored in the dis
   <li>Display a loading effect while waiting for data</li>
   <li>Responsive design for mobiles and tablets</li>
 </ul>
+
+
+### Large Screens Design 
+<img  width="90%" height="100%" src="https://user-images.githubusercontent.com/46169333/93689033-f6d95f00-faca-11ea-9b72-dafa1c6b8984.png">
+
+### Meduim Screens Design 
+<img  width="60%" height="50%" src="https://user-images.githubusercontent.com/46169333/93689034-f9d44f80-faca-11ea-9764-f3679db3873c.png">
+
+### Small Screens Design 
+<img  width="30%" height="50%" src="https://user-images.githubusercontent.com/46169333/93689039-fe990380-faca-11ea-8028-165bab6a10aa.png">
+
+### Search by repos name 
+<img  width="50%" height="100%" src="https://user-images.githubusercontent.com/46169333/93689290-5b95b900-facd-11ea-8200-3cbfa1b7700b.png">
+
+<img  width="50%" height="100%" src="https://user-images.githubusercontent.com/46169333/93689324-cc3cd580-facd-11ea-816a-529d6a74b842.png">
+
+### Circle loader
+<img  width="50%" height="100%" src="https://user-images.githubusercontent.com/46169333/93689289-5a648c00-facd-11ea-9405-3ca335c08426.png">
+
+
+
 
 
 ## Used libraries 
