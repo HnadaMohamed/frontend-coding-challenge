@@ -30,9 +30,9 @@ Link : https://portfolio.hnadamohamed.com/
 
 ## Getting started 
 
-Make sure you have the Angular CLI installed globally. Im using use NPM to manage the dependencies, then run npm install to resolve all dependencies (might take a minute).
+Make sure you have the Angular CLI installed globally. Im using NPM to manage the dependencies, then run npm install to resolve all dependencies (might take a minute).
 
-Run ng serve for a dev server. Navigate to http://localhost:4200/. 
+Run ng serve for dev server. Navigate to http://localhost:4200/. 
 
 
 ## Building the project
